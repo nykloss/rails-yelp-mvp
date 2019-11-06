@@ -1,0 +1,9 @@
+<div class="container">
+  <h1><%= @restaurant.name %></h1>
+  <h5>Category: <%= @restaurant.category %></h5>
+  <p><%= @restaurant.address %></p>
+  <p><%= @restaurant.phone_number %></p>
+  <%= link_to "Reviews", restaurant_reviews_path(@restaurant), class: "btn btn-primary mt-3" %>
+  <br>
+  <%= link_to "Back to list", restaurants_path, class: "btn btn-primary mt-3"  %>
+</div>
